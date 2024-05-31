@@ -1291,6 +1291,15 @@ fn_info_messages_pw() {
 	} | column -s $'\t' -t
 }
 
+fn_info_messages_sm() {
+	{
+		fn_port "header"
+		fn_port "Game" port udp
+		fn_port "Steam" steamport udp
+		fn_port "Unknown" unknownport tcp
+	} | column -s $'\t' -t
+}
+
 fn_info_messages_pz() {
 	{
 		fn_port "header"

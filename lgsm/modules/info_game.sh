@@ -628,6 +628,19 @@ fn_info_game_pw() {
 }
 
 # Config Type: ini
+# Parameters: false
+# Comment: ; or #
+# Example: ServerName=SERVERNAME
+# Filetype: cfg
+fn_info_game_sm() {
+	servername="${servername:-"NOT SET"}"
+	port="${port:-"0"}"
+	queryport="${port:-"0"}"
+	steamport="${steamport:-"0"}"
+	unknownport="1985"
+}
+
+# Config Type: ini
 # Parameters: true
 # Comment: ; or #
 # Example: PublicName=SERVERNAME
